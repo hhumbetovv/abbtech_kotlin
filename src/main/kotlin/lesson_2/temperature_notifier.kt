@@ -9,8 +9,8 @@ fun main() {
 fun temperatureNotifier(temp: Int) {
     val status: String = when {
         temp <= -40 -> "Freezing"
-        temp in -41 .. -20 -> "Very Cold"
-        temp in -21 .. 0 -> "Cold"
+        temp in -39 .. -20 -> "Very Cold"
+        temp in -19 .. 0 -> "Cold"
         temp in 1 .. 20 -> "Mild"
         temp in 21 .. 40 -> "Warm"
         else -> "Dangerous"
