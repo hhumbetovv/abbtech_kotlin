@@ -1,7 +1,7 @@
 package lesson_3
 
 fun main() {
-    val developer: Developer = Developer(
+    val developer = Developer(
         "Software Developer",
         1500.0,
         "Front-end Developer",

@@ -5,16 +5,16 @@ import kotlin.math.sqrt
 fun main() {
     // Initialization
     // Rectangle and Square
-    val rectangleOne: Rectangle = Rectangle(3.0, 4.0)
-    val rectangleTwo: Rectangle = Rectangle(4.0)
+    val rectangleOne = Rectangle(3.0, 4.0)
+    val rectangleTwo = Rectangle(4.0)
 
     // Triangles
-    val equilateral: Triangle = Triangle(8.0)
-    val isosceles: Triangle = Triangle(Pair(3.0, 4.0))
-    val dichotomous: Triangle = Triangle(Triple(3.0, 4.0, 5.0))
+    val equilateral = Triangle(8.0)
+    val isosceles = Triangle(Pair(3.0, 4.0))
+    val dichotomous = Triangle(Triple(3.0, 4.0, 5.0))
 
     // Circle
-    val circle: Circle = Circle(10)
+    val circle = Circle(10)
 
     // Method Overriding
     println("Calculate Area: ${rectangleOne.calculateArea()}")
@@ -56,7 +56,7 @@ data class Rectangle(private var width: Double, private var height: Double) : Sh
     // Constructor for Square
     constructor(size: Double) : this(size, size)
 
-    private lateinit var type: String;
+    private lateinit var type: String
 
     init {
         setType()
@@ -161,7 +161,7 @@ data class Triangle(private var sides: Triple<Double, Double, Double>) : Shape()
     )
 
 
-    private lateinit var type: String;
+    private lateinit var type: String
 
     init {
         setType()
@@ -241,7 +241,7 @@ data class Circle(private var radius: Double) : Shape() {
 
     constructor(diameter: Number) : this(diameter.toDouble() / 2)
 
-    private var type: String = "Circle";
+    private var type: String = "Circle"
 
     // Method Overrides
     override fun getType(): String {
